@@ -6,7 +6,7 @@ Give your Cloud9 instance a modern look!
 <img src="screenshot.png" alt="screenshot" width="100%">
 
 ## Features
-- Annimations!
+- Animations!
 - Retina ready!
 - Modern fonts!
 - Updated filetype icons!
