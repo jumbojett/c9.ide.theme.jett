@@ -391,9 +391,11 @@ define(function(require, exports, module) {
             settings.set("user/general/@revealfile", true);
             // Set user defaults
             settings.set("user/ace/@cursorStyle", "smooth slim");
+            settings.set("user/tabs/@title", true);
             // Good looking fonts!
             settings.set("user/ace/@fontFamily", "'Menlo','Inconsolata', 'Source Code Pro', monospace");
-            settings.set("user/ace/@fontsize", 14);
+            settings.set("user/ace/@fontSize", 14);
+            settings.set("user/ace/@antialiasedfonts", true);
             // Give the output console the same look as the our theme
             settings.set("user/output/@backgroundColor", "#2b303b");
             settings.set("user/output/@foregroundColor", "#767B85");
