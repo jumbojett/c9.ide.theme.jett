@@ -103,7 +103,7 @@ function main(options, imports, register) {
                         // Copy our theme to the directory
                         ["js", "css"].every(function(ext) {
                             fs.createReadStream(__dirname + '/ace.themes/' + name + '.' + ext)
-                                .pipe(fs.createWriteStream(process.cwd() + "/node_modules/ace/lib/ace/theme/" + name + "." + ext));
+                                .pipe(fs.createWriteStream(__dirname + "/../../node_modules/ace/lib/ace/theme/" + name + "." + ext));
                             return true;
                         });
 
