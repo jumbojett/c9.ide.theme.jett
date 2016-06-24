@@ -396,6 +396,8 @@ define(function(require, exports, module) {
             settings.set("user/ace/@fontFamily", "'Menlo','Inconsolata', 'Source Code Pro', monospace");
             settings.set("user/ace/@fontSize", 14);
             settings.set("user/ace/@antialiasedfonts", true);
+            settings.set("user/terminal/@fontfamily", "'Inconsolata', 'Source Code Pro', monospace");
+            settings.set("user/terminal/@fontsize", 14);
             // Give the output console the same look as the our theme
             settings.set("user/output/@backgroundColor", "#2b303b");
             settings.set("user/output/@foregroundColor", "#767B85");
