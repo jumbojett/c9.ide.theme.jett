@@ -460,6 +460,8 @@ define(function(require, exports, module) {
          * @return icon
          */
         function getIconClass(filename) {
+            
+            if (!filename) return '';
 
             // Remove the path if it's a directory string
             filename = filename.split("/").pop();
