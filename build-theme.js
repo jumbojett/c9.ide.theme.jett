@@ -24,7 +24,7 @@ function main(options, imports, register) {
     var atomic = require("c9/atomic");
 
     var themeName = "jett";
-    var themeCSSPath = __dirname + '/build/compile_' + themeName + '.css';
+    var themeCSSPath = __dirname + '/css/compile_' + themeName + '.css';
 
     options.version = 'standalone';
     options.cache = path.normalize(path.join(options.pathRoot + '/../build'));
@@ -70,7 +70,7 @@ function main(options, imports, register) {
             path: __dirname + "/fonts",
             mount: "/fonts"
         }, {
-            path: __dirname + "/build",
+            path: __dirname + "/css",
             mount: "/standalone/skin"
         }]);
 
