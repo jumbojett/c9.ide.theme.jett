@@ -524,7 +524,7 @@ define(function(require, exports, module) {
 
         // Keep page from rendering until theme css loads
         // This static route is registered in the build_theme.js
-        require(["text!/static/standalone/skin/compile_jett.css"], function(css) {
+        require(["text!/static/plugins/c9.ide.theme.jett/css/compile_jett.css"], function(css) {
 
             // Once we've loaded the jett CSS then insert it directly into the DOM
             cssDOM = document.createElement("style");

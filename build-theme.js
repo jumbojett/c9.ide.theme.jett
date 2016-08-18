@@ -69,9 +69,6 @@ function main(options, imports, register) {
         connectStatic.addStatics([{
             path: __dirname + "/fonts",
             mount: "/fonts"
-        }, {
-            path: __dirname + "/css",
-            mount: "/standalone/skin"
         }]);
 
         getPathConfig('standalone', function(err, pathConfig) {
