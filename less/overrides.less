@@ -1723,9 +1723,14 @@ div.navigate-list small {
     background: none !important;
 }
 
-.editor_tab .session_page.curpage {
-    border: 1px solid lighten(@background, 5%);
-    border-top: none;
+.codeditorHolder .editor_tab {
+    border: 1px solid lighten(@background, 20%);
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.console .firstbtn {
+    border-left: none !important;
 }
 
 .ace_tree.ace_tree_focus .selected .extrainfo {
@@ -2136,10 +2141,11 @@ body .runner-form-header {
 }
 
 .session_btn.curbtn {
-    background: lighten(@background, 4%);
-    background-color: lighten(@background, 4%);
-    border: 1px solid lighten(@background, 5%);
-    border-bottom: none;
+    background: transparent;
+    background-color: transparent;
+    border: 1px solid lighten(@background, 20%);
+    border-bottom: 1px solid transparent;
+    border-top: none;
     height: @pane-button-height;
 }
 
@@ -2154,7 +2160,6 @@ body .runner-form-header {
     margin-top: none !important;
     padding-top: none !important;
     height: 37px !important;
-    border-bottom-color: rgb(37, 41, 52) !important;
 }
 
 .has_apf .session_btn strong {
@@ -2267,8 +2272,8 @@ body .runner-form-header {
 }
 
 .editor_tab .btnsesssioncontainer .inside {
-    padding: 2px 6px 0 34px;
-    height: 40px;
+    padding: 0px 6px 0 34px;
+    height: 38px;
 }
 
 .session_btn .tab_shadow {
@@ -2381,7 +2386,7 @@ body .runner-form-header {
 .editor_tab .btnsesssioncontainer {
     font-size: 13px !important;
     background: @background !important;
-    border-bottom: 1px solid lighten(@background, 10%);
+    border-bottom: 1px solid lighten(@background, 20%);
 }
 
 .session_btn {

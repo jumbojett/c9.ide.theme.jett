@@ -343,14 +343,14 @@
 
 // Pane
 @pane-background : darken(@background, 5%);
-@pane-button-container-height: 39px;
+@pane-button-container-height: 37px;
 @pane-button-container-inner-height: 27px;
 @pane-button-container-padding: 5px 6px 0 23px;
 
 @pane-button-height: 37px;
 @pane-button-font-family: @general-font-family;
 @pane-button-font-size: 13px;
-@pane-button-background: @background;
+@pane-button-background: transparent;
 @pane-button-color: lighten(@background, 4%);
 @pane-button-active-color: @pane-button-background;
 @pane-button-textshadow: none;
@@ -449,8 +449,8 @@
 @pane-plus-active-gradient: linear-gradient(top, transparent 0%, transparent 100%);
 
 @pane-menu-margin: 5px 0 0 -5px;
-@pane-menu-left: 8px;
-@pane-menu-top: 9px;
+@pane-menu-left: 9px;
+@pane-menu-top: 6px;
 @pane-menu-icon: @c9-no-repeat;
 @pane-menu-icon-image-width: @c9-no-repeat-width;
 @pane-menu-icon-image-height: @c9-no-repeat-height;
@@ -808,9 +808,9 @@
 @gutter-tooltip-dark-font-smoothing: true;
 
 // Splitter
-@splitter-vertical-line-color: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQYV2OctGLL/7wIH0YGAoBxKCgk5AmYPEHfDgKFAGRkFAtR6bzkAAAAAElFTkSuQmCC);
+@splitter-vertical-line-color: none;
 @splitter-vertical-dark-line-color: @splitter-vertical-line-color;
-@splitter-horizontal-line-color: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQYV2Ocv/3AfwY0kOjpwIguhiGArgDGH1WIK2TA4kQHDwBWZwQLW0+scQAAAABJRU5ErkJggg==);
+@splitter-horizontal-line-color: none;
 @splitter-top-divider-color: transparent;
 @splitter-left-divider-color: darken(#DEDEDE, @darken-chrome);
 @splitter-highlight: transparent;
