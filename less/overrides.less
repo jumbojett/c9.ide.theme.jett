@@ -2136,9 +2136,7 @@ body .runner-form-header {
     top: 0;
 }
 
-.editor_tab .btnsesssioncontainer .inside {
-    background-color: transparent !important;
-}
+
 
 .session_btn.curbtn {
     background: transparent;
@@ -2159,7 +2157,7 @@ body .runner-form-header {
 .session_btn.focus {
     margin-top: none !important;
     padding-top: none !important;
-    height: 37px !important;
+    height: 38px !important;
 }
 
 .has_apf .session_btn strong {
@@ -2295,7 +2293,7 @@ body .runner-form-header {
 }
 
 .editor_tab .session_page {
-    top: 40px;
+    top: 38px;
 }
 
 .ace_folding-enabled > .ace_gutter-cell {
@@ -2385,8 +2383,8 @@ body .runner-form-header {
 
 .editor_tab .btnsesssioncontainer {
     font-size: 13px !important;
-    background: @background !important;
     border-bottom: 1px solid lighten(@background, 20%);
+    background: @background;
 }
 
 .session_btn {
@@ -2954,6 +2952,10 @@ span.chatmessage:after {
     box-sizing: border-box;
 }
 
+.has_apf .console .btnsesssioncontainer .inside {
+    padding-left : 0px;
+}
+
 .has_apf .plus_tab_button {
     top: 5px;
 }
@@ -3006,7 +3008,11 @@ span.chatmessage:after {
 /* Terminal cursor color */
 
 .c9terminalFocus .c9terminalcontainer .terminal .reverse-video {
-    background-color: #767B85;
+    background-color: rgb(248, 28, 229);
+}
+
+.c9terminal .c9terminalcontainer .terminal .reverse-video {
+    outline: 1px solid rgb(248, 28, 229);
 }
 
 .c9terminalcontainer.cover:after {
@@ -3023,6 +3029,10 @@ span.chatmessage:after {
 
 .c9terminal .c9terminalcontainer .terminal {
     margin: 15px;
+}
+
+.editor_tab .c9terminal .c9terminalcontainer{
+    background: #000;
 }
 
 /* Pop-up windows */

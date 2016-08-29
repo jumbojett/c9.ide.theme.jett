@@ -107,12 +107,15 @@ define(function(require, exports, module) {
 
                         var tab = pane.activeTab;
 
-                        if (themeEnabled && pane.activeTab.editorType == "ace" && ace.theme && ace.theme.bg && ace.theme.fg) {
-                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = ace.theme.bg;
+                        if (themeEnabled && ace.theme && ace.theme.bg && ace.theme.fg) {
+                            var colorHash = {
+                                "ace": ace.theme.bg,
+                                "terminal": '#000',
+                                "preferences": '#2E323C'
+                            }
+
+                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = colorHash[pane.activeTab.editorType];
                             tab.foregroundColor = tab.aml.$button.style.color = ace.theme.fg;
-                        }
-                        else if (themeEnabled && pane.activeTab.title == "Preferences") {
-                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = '#3D4657';
                         }
 
                         /**
@@ -460,7 +463,7 @@ define(function(require, exports, module) {
          * @return icon
          */
         function getIconClass(filename) {
-            
+
             if (!filename) return '';
 
             // Remove the path if it's a directory string
