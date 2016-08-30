@@ -124,8 +124,10 @@ define(function(require, exports, module) {
                          * @return
                          */
                         var clearColor = function() {
-                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = '';
-                            tab.foregroundColor = tab.aml.$button.style.color = '';
+                            if (tab.aml.$button) {
+                                tab.backgroundColor = tab.aml.$button.style.backgroundColor = '';
+                                tab.foregroundColor = tab.aml.$button.style.color = '';
+                            }
                         };
 
                         pane.activeTab.on("deactivate", clearColor);
