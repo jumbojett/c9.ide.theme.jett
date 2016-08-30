@@ -1,5 +1,5 @@
 .ace-jett .ace_gutter {
-  background: #1c1d1f;
+  background: #1C1D21;
   color: #686b78
 }
 
@@ -8,7 +8,7 @@
 }
 
 .ace-jett {
-  background-color: #1c1d1f;
+  background-color: #1C1D21;
   color: #cbcdd2
 }
 
@@ -21,7 +21,7 @@
 }
 
 .ace-jett.ace_multiselect .ace_selection.ace_start {
-  box-shadow: 0 0 3px 0px #1c1d1f;
+  box-shadow: 0 0 3px 0px #1C1D21;
   border-radius: 2px
 }
 
@@ -92,7 +92,7 @@
 }
 
 .ace-jett .ace_invalid.ace_illegal {
-  color: #1c1d1f;
+  color: #1C1D21;
   background-color: #bf616a
 }
 
@@ -153,6 +153,6 @@
 }
 
 .ace_diff-gutter.ace-jett {
-  background-color: #1c1d1f !important;
+  background-color: #1C1D21 !important;
   border-right: 1px solid #464e5e !important;
 }

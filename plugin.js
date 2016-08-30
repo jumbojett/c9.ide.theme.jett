@@ -115,7 +115,7 @@ define(function(require, exports, module) {
                                 "editor::terminal": '#000',
                                 "editor::output": '#000',
                                 "editor::preferences": '#25272C',
-                                "editor::immediate" : '#1C1D1F'
+                                "editor::immediate" : '#1C1D21'
                             }
 
                             tab.backgroundColor = tab.aml.$button.style.backgroundColor = (colorHash[tab.aml.type] || "iherit");
