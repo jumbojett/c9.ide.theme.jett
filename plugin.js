@@ -111,10 +111,10 @@ define(function(require, exports, module) {
                             var colorHash = {
                                 "ace": ace.theme.bg,
                                 "terminal": '#000',
-                                "preferences": '#2E323C'
+                                "preferences": '#25272C'
                             }
 
-                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = colorHash[pane.activeTab.editorType];
+                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = (colorHash[pane.activeTab.editorType] || "iherit");
                             tab.foregroundColor = tab.aml.$button.style.color = ace.theme.fg;
                         }
 

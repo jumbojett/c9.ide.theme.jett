@@ -2158,6 +2158,7 @@ body .runner-form-header {
     margin-top: none !important;
     padding-top: none !important;
     height: 38px !important;
+    min-width: 9vw;
 }
 
 .has_apf .session_btn strong {
@@ -2177,17 +2178,12 @@ body .runner-form-header {
 
 /* Expand tab titles to increase reability */
 
-.session_btn.curbtn,
-.session_btn:hover {
-    min-width: 175px;
-}
-
 .session_btn.curbtn.dark.running {
     background: @pane-background;
 }
 
 .session_btn.over:not(.focus) {
-    background-color: lighten(@background, 2%);
+    color: lighten(@color,10%);
 }
 
 .focus.session_btn.curbtn .sessiontab_title {
@@ -2234,7 +2230,6 @@ body .runner-form-header {
 }
 
 .session_btn {
-    max-width: 175px;
     border-left: 0px solid #1d1d1d;
     border-right: 0px solid #1d1d1d;
     border-top: 0px solid #1d1d1d;
@@ -2277,7 +2272,6 @@ body .runner-form-header {
 .session_btn .tab_shadow {
     display: none;
 }
-
 .session_btn strong {
     content: ' ';
     top: 12px;
@@ -2388,7 +2382,7 @@ body .runner-form-header {
 }
 
 .session_btn {
-    padding: 0 17px !important;
+    padding: 0 15px !important;
     margin-right: 0px !important;
 }
 
@@ -2866,7 +2860,7 @@ span.chatmessage:after {
     position: relative;
     top: 3px;
     left: 3px;
-    color: @base;
+    color: lighten(@background,20%);
 }
 
 .c9-simple-btnOver.tabmenubtn:after,
@@ -3028,7 +3022,7 @@ span.chatmessage:after {
 }
 
 .c9terminal .c9terminalcontainer .terminal {
-    margin: 15px;
+    margin: 15px 15px 15px 9px;
 }
 
 .editor_tab .c9terminal .c9terminalcontainer{
