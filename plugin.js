@@ -108,13 +108,17 @@ define(function(require, exports, module) {
                         var tab = pane.activeTab;
 
                         if (themeEnabled && ace.theme && ace.theme.bg && ace.theme.fg) {
+
+                            // Color tabs based on their tab.aml.type
                             var colorHash = {
-                                "ace": ace.theme.bg,
-                                "terminal": '#000',
-                                "preferences": '#25272C'
+                                "editor::ace": ace.theme.bg,
+                                "editor::terminal": '#000',
+                                "editor::output": '#000',
+                                "editor::preferences": '#25272C',
+                                "editor::immediate" : '#1C1D1F'
                             }
 
-                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = (colorHash[pane.activeTab.editorType] || "iherit");
+                            tab.backgroundColor = tab.aml.$button.style.backgroundColor = (colorHash[tab.aml.type] || "iherit");
                             tab.foregroundColor = tab.aml.$button.style.color = ace.theme.fg;
                         }
 
