@@ -63,8 +63,8 @@ This is a little manual at the moment.
 2. Restart cloud9. The server-side plugin will detect the missing asset and rebuild it.
 
 ## License
-- Licensed under the GNU GENERAL PUBLIC LICENSE v3:
-  - http://www.gnu.org/licenses/gpl-3.0.en.html
+- Licensed under the MIT License:
+  - https://opensource.org/licenses/MIT
 
 ## Contributing
 
